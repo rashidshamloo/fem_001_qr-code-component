@@ -10,21 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7c2193050b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>QR Code Element</title>
     <style>
       * {
         box-sizing: border-box;
       }
       body {
-        margin: 0;
         background-color: hsl(212, 45%, 89%);
         font-family: "Outfit", sans-serif;
-      }
-      .container {
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
       }
       .qr-card {
         display: inline-block;
@@ -33,7 +35,8 @@
         text-align: center;
         max-width: 320px;
         background-color: hsl(0, 0%, 100%);
-        margin: 20px;
+        box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.2),
+          0 2px 5px hsla(0, 0%, 0%, 0.1);
       }
       .qr-card img {
         width: 100%;
@@ -49,20 +52,56 @@
         color: hsl(220, 15%, 55%);
         font-size: 15px;
       }
+      footer {
+        max-width: 320px;
+        padding: 10px;
+        text-align: center;
+      }
+      footer p {
+        color: hsl(220, 15%, 55%);
+        font-size: 13px;
+        margin: 3px;
+      }
+      .footer-icon {
+        font-size: 15px;
+      }
+      .footer-icon a {
+        color: hsl(220, 15%, 55%);
+      }
+      .footer-icon a:hover {
+        color: hsl(218, 44%, 22%);
+        transition: 700ms;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="qr-card">
-        <img src="images/image-qr-code.png" alt="QR Code Image" />
-        <div class="qr-card-info">
-          <h3>Improve your front-end skills by building projects</h3>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
+    <div class="qr-card">
+      <img src="images/image-qr-code.png" alt="QR Code Image" />
+      <div class="qr-card-info">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
       </div>
     </div>
+    <footer>
+      <p>Developed by Rashid Shamloo</p>
+      <p class="footer-icon">
+        <a
+          href="https://rashidshamloo.github.com"
+          title="https://rashidshamloo.github.com"
+          target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        |
+        <a
+          href="https://twitter.com/rashidshamloo"
+          title="https://twitter.com/rashidshamloo"
+          target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+      </p>
+    </footer>
   </body>
 </html>
