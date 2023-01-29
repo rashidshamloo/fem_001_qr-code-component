@@ -1,14 +1,13 @@
 * {
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 body {
   background-color: hsl(212, 45%, 89%);
-  font-family: "Outfit", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .qr-card {
   display: inline-block;
@@ -17,7 +16,7 @@ body {
   text-align: center;
   max-width: 320px;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.2), 0 2px 5px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1)
 }
 .qr-card img {
   width: 100%;
@@ -32,24 +31,4 @@ body {
 .qr-card-info p {
   color: hsl(220, 15%, 55%);
   font-size: 15px;
-}
-footer {
-  max-width: 320px;
-  padding: 10px;
-  text-align: center;
-}
-footer p {
-  color: hsl(220, 15%, 55%);
-  font-size: 13px;
-  margin: 3px;
-}
-.footer-icon {
-  font-size: 15px;
-}
-.footer-icon a {
-  color: hsl(220, 15%, 55%);
-}
-.footer-icon a:hover {
-  color: hsl(218, 44%, 22%);
-  transition: 700ms;
 }
