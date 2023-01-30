@@ -9,12 +9,11 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-size: 15px;
 }
 .qr-card {
   display: inline-block;
   border-radius: 20px;
-  padding: 15px;
+  padding: 16px;
   text-align: center;
   max-width: 320px;
   background-color: hsl(0, 0%, 100%);
@@ -30,5 +29,6 @@ body {
 }
 .qr-card p {
   color: hsl(220, 15%, 55%);
+  font-size: 1rem;
   margin: 0 10px;
 }
