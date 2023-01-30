@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  font-size: 15px;
 }
 .qr-card {
   display: inline-block;
@@ -17,19 +18,17 @@ body {
   text-align: center;
   max-width: 320px;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.05);
 }
 .qr-card img {
   width: 100%;
   border-radius: 10px;
 }
-.qr-card-info {
-  padding: 5px 15px;
-}
-.qr-card-info h3 {
+.qr-card h1 {
   color: hsl(218, 44%, 22%);
+  font-size: 1.4rem;
 }
-.qr-card-info p {
+.qr-card p {
   color: hsl(220, 15%, 55%);
-  font-size: 15px;
+  margin: 0 10px;
 }
