@@ -33,11 +33,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### What I learned
 
 - Using semantic HTML5 tags instead of divs
-- Using "min-height: 100%;" instead of "height: 100%;" on the body so it can grow vertically when there's more content.
+- Using "min-height: 100%;" instead of "height: 100vh;" on the body so it can grow vertically when there's more content.
 
 ```css
 body {
-  min-height: 100%;
+  min-height: 100vh;
   ...
 }
 ```
